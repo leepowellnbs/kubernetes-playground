@@ -35,6 +35,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: leepowell/my-app:latest
+          tags: my-app:latest
           # tags: ${{ steps.meta.outputs.tags }}
           # labels: ${{ steps.meta.outputs.labels }}
