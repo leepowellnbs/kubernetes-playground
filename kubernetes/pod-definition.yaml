@@ -1,0 +1,12 @@
+# https://medium.com/swlh/how-to-run-locally-built-docker-images-in-kubernetes-b28fbc32cc1d
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-app
+  labels:
+    app: my-app-label
+spec:
+  containers:
+  - name: my-app
+    image: leepowell/my-app
+    imagePullPolicy: Never
