@@ -15,11 +15,11 @@ spec:
         app: my-app
     spec:
       containers:
-      - name: my-app
-        image: leepowell/my-app
-        imagePullPolicy: Never
-        env:
-        - name: MY_POD_IP
-          valueFrom:
-            fieldRef:
-              fieldPath: status.podIP
+        - name: my-app
+          image: leepowell/my-app:1.0.0
+          imagePullPolicy: Never
+          env:
+            - name: MY_POD_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
