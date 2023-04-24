@@ -35,7 +35,7 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: status.podIP
-          # - name: MY_POD_SERVICE_ACCOUNT
-          #   valueFrom:
-          #     fieldRef:
-          #       fieldPath: spec.serviceAccountName
+            - name: MY_POD_SERVICE_ACCOUNT
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.serviceAccountName
