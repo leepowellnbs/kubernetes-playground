@@ -2,10 +2,13 @@
   "name": "my-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "http-server ./public -p 8888"
+    "start": "node app.js"
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "http-server": "^14.1.1"
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
   }
 }
