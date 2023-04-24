@@ -18,5 +18,3 @@ spec:
       - name: my-app
         image: leepowell/my-app
         imagePullPolicy: Never
-        ports:
-        - containerPort: 8888
