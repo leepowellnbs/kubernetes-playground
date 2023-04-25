@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: leepowell/my-app
-          imagePullPolicy: Never
+          image: leepowellnbs/my-app:2.0.0
+          imagePullPolicy: IfNotPresent
           env:
             - name: MY_NODE_NAME
               valueFrom:
